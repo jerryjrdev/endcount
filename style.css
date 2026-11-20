@@ -180,9 +180,9 @@ body {
   text-underline-offset: 6px;
 }
 
-/* Main */
-main {
-  padding-top: 40px;
+/* Main (main.wrap so it outranks the .wrap padding shorthand) */
+main.wrap {
+  padding-top: 36px;
   padding-bottom: 56px;
 }
 
@@ -279,6 +279,9 @@ strong {
 
 .path {
   font-weight: 600;
+}
+
+.nobr {
   white-space: nowrap;
 }
 
@@ -395,6 +398,9 @@ strong {
 .faq p,
 .faq ul {
   color: var(--ink-2);
+}
+.faq ul {
+  list-style: disc;
 }
 
 /* Estimate note (Carbon), as in the app's disclaimer footer */
